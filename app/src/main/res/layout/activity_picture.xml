@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.demo.recyclerviewuploadpicture.PictureActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0073dd"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="图片上传"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_pic_choose"
+            android:text="选择照片"
+            android:layout_gravity="left"
+
+            android:textColor="#0073dd"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_pic_upload"
+            android:text="上传照片"
+            android:layout_gravity="right"
+            android:textColor="#0073dd"
+            />
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
